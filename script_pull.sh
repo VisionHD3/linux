@@ -10,7 +10,8 @@ WEB_DIR="/var/www/html"
 cd "$WEB_DIR"
 
 # Git pull harult 'linux'
-git pull origin main
+git fetch --all
+git reset --hard origin/main
 cp linux/* /var/www/html
 # Kopeeri failid Apache2 kausta
 
